@@ -1,0 +1,18 @@
+html {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello {
+  margin: 0;
+  font-size: 4rem;
+  padding-bottom: 6rem;
+}
