@@ -1,18 +1,53 @@
 html {
   font-family: sans-serif;
   height: 100%;
+
+  --fg: black;
+  --bg: white;
+}
+
+.dark {
+  --fg: #e0e0e0;
+  --bg: rgb(0, 0, 20);
 }
 
 body {
+  color: var(--fg);
+  background-color: var(--bg);
+
   height: 100%;
   margin: 0;
+  display: grid;
+  grid-template-rows: 5rem auto;
+}
+
+header {
+  padding: 1rem;
   display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.hello {
+#mode {
+  width: 3rem;
+  height: 3rem;
+}
+
+#hello {
   margin: 0;
-  font-size: 4rem;
+  font-size: 2rem;
   padding-bottom: 6rem;
+}
+
+@media (min-width: 800px) {
+  #hello {
+    font-size: 4rem;
+  }
 }
