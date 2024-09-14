@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" class="h-full font-sans">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/index.css?version=1">
-  <script src="index.js"></script>
+  <link rel="stylesheet" href="/output.css">
+  <script defer src="index.js"></script>
   <title>matjb.dev</title>
 </head>
 
-<body>
-  <header>
-    <img id="mode" src="icons/light.svg" onclick="toggleMode()">
+<body class="text-black bg-white dark:text-slate-50 dark:bg-slate-950 h-full m-0 grid grid-rows-[5rem_auto]">
+  <header class="p-4 flex flex-row justify-end">
+    <img id="mode-switch" class="w-12 h-12" src="icons/dark.svg">
   </header>
 
-  <main>
-    <h1 id="hello">hello, world</h1>
+  <main class="flex flex-col items-center justify-center">
+    <h1 class="m-0 text-5xl md:text-6xl pb-24">hello, world</h1>
   </main>
 
 </body>
